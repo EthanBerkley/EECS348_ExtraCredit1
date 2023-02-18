@@ -15,12 +15,16 @@ algorithm:
 #include "Data.h"
 int main()
 {
-
+  // initialize exec class
   Data data;
 
+  // run algorithm until its complete
   while (!data.loop())
   {
   };
+  // once its complete, print formatted output.
   data.printFinal();
+
+  // terminate, data object should be destroyed and deallocate all memory.
   return 0;
 }
